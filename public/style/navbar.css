@@ -1,0 +1,31 @@
+header {
+    background-color: #131313;
+    height: 5rem;
+    width: auto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-left: 10rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    font: bold;
+}
+
+a:hover {
+    color: #016790;
+}
