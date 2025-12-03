@@ -120,9 +120,9 @@ class RegisterController extends AbstractController
         $data = [];
 
         if (isset($_POST["submit"])) {
-            if (isset($_POST["title"])) {
+            if (isset($_POST["name"])) {
                 $project = new Project();
-                $project->setTitle(Tools::sanitize($_POST["title"]));
+                $project->setTitle(Tools::sanitize($_POST["name"]));
                 $idAccount = $_SESSION["id"];
 
                 if (!$this->accountRepository->isProjectToAccountExists($project, $idAccount)) {
